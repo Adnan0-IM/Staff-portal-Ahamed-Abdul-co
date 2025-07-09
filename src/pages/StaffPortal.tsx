@@ -96,7 +96,7 @@ const StaffPortal = () => {
   return (
     <>
       {/* Header */}
-      <header className="w-full fixed top-0 left-0  bg-blue-800 z-50 shadow-xl transition-all duration-200">
+      <header className="w-full fixed top-0 left-0   supports-[backdrop-filter]:bg-[#0647a6]/90 z-50 shadow-xl transition-all duration-200">
         <nav className={` ${location.pathname === "/staffportal/login" ? 'py-4' : 'py-3' } container mx-auto flex items-center justify-between  px-4 sm:px-6`}>
           <Link to="/" className="flex items-center transition-transform hover:scale-105">
             <img src={logo2} alt="Ahmed-Abdul&co" className="w-[35px] h-auto sm:ml-0 rounded-md shadow-sm"/>
@@ -439,7 +439,7 @@ const StaffPortal = () => {
 
       {/* Footer */}
       {!isLoginPage && isAuthenticated && (
-        <footer className=" mt-auto  bg-[#0F2646] shadow-lg ">
+        <footer className=" mt-auto  bg-[#0647a6] shadow-lg ">
           <div className="container mx-auto py-5 px-4 sm:px-6">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6 mb-4">
               <div className="flex flex-col items-center sm:items-start">
