@@ -35,14 +35,14 @@ const StaffPortal = () => {
   const isPartnerPage = location.pathname === "/staffportal/partners";
 
   // Authentication protection only
-  useEffect(() => {
-    // Handle login/logout redirects
-    if (!isAuthenticated && !isLoginPage) {
-      navigate('/staffportal/login', { replace: true });
-    } else if (isAuthenticated && isLoginPage) {
-      navigate('/staffportal', { replace: true });
-    }
-  }, [isAuthenticated, isLoginPage, navigate]);
+  // useEffect(() => {
+  //   // Handle login/logout redirects
+  //   if (!isAuthenticated && !isLoginPage) {
+  //     navigate('/staffportal/login', { replace: true });
+  //   } else if (isAuthenticated && isLoginPage) {
+  //     navigate('/staffportal', { replace: true });
+  //   }
+  // }, [isAuthenticated, isLoginPage, navigate]);
 
   // Separate effect for role-based redirects to prevent loops
   useEffect(() => {
